@@ -1,0 +1,21 @@
+{
+    "name" : "Web Development Projects",
+    "description" : "This is web development projects",
+    "data" : [
+        {
+            "name" : "Instagram Clone",
+            "description" : "This is an Instagram clone make with MERN stack",
+            "link" : "https://github.com/isubhamsr/market-place"
+        },
+        {
+            "name" : "Technical Blog",
+            "description" : "This is an Blog Webiste made with Django and React",
+            "link" : "https://github.com/isubhamsr/django-react-blog"
+        },
+        {
+            "name" : "Technical Blog",
+            "description" : "This is an Blog Webiste made with Django and React",
+            "link" : "https://github.com/isubhamsr/django-react-blog"
+        }
+    ]
+}
