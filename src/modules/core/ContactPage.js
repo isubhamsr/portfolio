@@ -1,6 +1,11 @@
 import React from 'react'
 
 export default function ContactPage() {
+
+    const onSubmit = (e) => {
+        e.preventDefault()
+    }
+
     return (
         <section class="text-gray-600 body-font relative">
             <div class="container px-5 py-24 mx-auto">
@@ -29,7 +34,7 @@ export default function ContactPage() {
                             </div>
                         </div>
                         <div class="p-2 w-full">
-                            <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+                            <button onClick={onSubmit} class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
                         </div>
                     </form>
                 </div>
