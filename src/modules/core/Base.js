@@ -160,7 +160,7 @@ export default function Base({ children }) {
                 class="text-gray-600 ml-1"
                 target="_blank"
               >
-                @isubhamsr
+                @isubhamsr 
               </a>
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
