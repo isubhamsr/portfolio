@@ -3,7 +3,6 @@ import ProjectComponent from './Components/ProjectComponent'
 import ProjectName from './Components/ProjectName'
 
 const data = require('../projects/Projects File/DataAnalisis.json')
-console.log(data.data.length);
 
 export default function DataAnalysisProject() {
     return (

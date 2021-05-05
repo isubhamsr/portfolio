@@ -85,20 +85,17 @@ export default function Base({ children }) {
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                CATEGORIES
+              COMPANY
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                  <Link to='/blog' class="text-gray-600 hover:text-gray-800">Blog</Link>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                  <Link to='/about' class="text-gray-600 hover:text-gray-800">About</Link>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                  <Link to='/contact' class="text-gray-600 hover:text-gray-800">Contact</Link>
                 </li>
               </nav>
             </div>

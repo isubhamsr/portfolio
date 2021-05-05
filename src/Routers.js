@@ -4,6 +4,7 @@ import About from './modules/core/About';
 import Home from './modules/core/Home';
 import Blog from './modules/blog/BlogIndex'
 import Projects from './modules/projects/ProjectIndex'
+import ContactPage from './modules/core/ContactPage';
 
 export default function Routers() {
     return (
@@ -13,6 +14,9 @@ export default function Routers() {
             </Route>
             <Route path="/about" exact>
                 <About />
+            </Route>
+            <Route path="/contact" exact>
+                <ContactPage />
             </Route>
             <Route path="/pojects" exact>
                 <Projects />

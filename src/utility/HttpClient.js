@@ -1,7 +1,8 @@
 import Storage from './Storage'
 
 const HttpClient = {
-    BASE_URL: 'http://localhost:3001/api/v1/',
+    // BASE_URL: 'http://localhost:8000/api/v1/',
+    BASE_URL: 'https://subhamroyportfolionode.herokuapp.com/api/v1/',
 
     prepareUrl : (route)=>{
         const url = HttpClient.BASE_URL
@@ -53,4 +54,4 @@ const HttpClient = {
     }
 }
 
-export default HttpClien
+export default HttpClient
