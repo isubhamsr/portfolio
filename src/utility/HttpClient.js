@@ -36,7 +36,7 @@ const HttpClient = {
                 'token': token,
             },
         }
-        if (method != 'GET') {
+        if (method !== 'GET') {
             config.body = JSON.stringify(params)
         }
         const url = HttpClient.prepareUrl(route)
