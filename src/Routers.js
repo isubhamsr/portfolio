@@ -5,6 +5,7 @@ import Home from './modules/core/Home';
 import Blog from './modules/blog/BlogIndex'
 import Projects from './modules/projects/ProjectIndex'
 import ContactPage from './modules/core/ContactPage';
+import BlogDetails from './modules/blog/Components/BlogDetails';
 
 export default function Routers() {
     return (
@@ -23,6 +24,9 @@ export default function Routers() {
             </Route>
             <Route path="/blog" exact>
                 <Blog />
+            </Route>
+            <Route path="/blogdetails" exact>
+                <BlogDetails />
             </Route>
         </Switch>
     )

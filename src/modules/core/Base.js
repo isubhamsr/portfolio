@@ -1,7 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import HttpClient from "../../utility/HttpClient";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import Alert from "@material-ui/lab/Alert";
 
 export default function Base({ children }) {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = async () => {
+    setIsSubmit(true);
+
+    const data = {
+      email: email,
+    };
+
+    try {
+      const response = await HttpClient.post("newsletter", data);
+
+      if (response.error) {
+        setError(true);
+        setSuccess(false);
+        setErrorMessage(response.message);
+        setIsSubmit(false);
+      } else {
+        setError(false);
+        setSuccess(true);
+        setMessage(response.message);
+        setIsSubmit(false);
+        setEmail("")
+      }
+    } catch (error) {
+      setError(true);
+      setSuccess(false);
+      setErrorMessage(error.message);
+      setIsSubmit(false);
+    }
+  };
+
   return (
     <React.Fragment>
       <header class="text-gray-600 body-font">
@@ -85,23 +126,29 @@ export default function Base({ children }) {
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              COMPANY
+                COMPANY
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <Link to='/blog' class="text-gray-600 hover:text-gray-800">Blog</Link>
+                  <Link to="/blog" class="text-gray-600 hover:text-gray-800">
+                    Blog
+                  </Link>
                 </li>
                 <li>
-                  <Link to='/about' class="text-gray-600 hover:text-gray-800">About</Link>
+                  <Link to="/about" class="text-gray-600 hover:text-gray-800">
+                    About
+                  </Link>
                 </li>
                 <li>
-                  <Link to='/contact' class="text-gray-600 hover:text-gray-800">Contact</Link>
+                  <Link to="/contact" class="text-gray-600 hover:text-gray-800">
+                    Contact
+                  </Link>
                 </li>
               </nav>
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              LEGAL
+                LEGAL
               </h2>
               <nav class="list-none mb-10">
                 <li>
@@ -114,19 +161,36 @@ export default function Base({ children }) {
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              Subscribe Our Newsletter
+                Subscribe Our Newsletter
               </h2>
+              {error ? (
+                <React.Fragment>
+                  <Alert severity="error">{errorMessage}</Alert>
+                  <br />
+                </React.Fragment>
+              ) : null}
+              {success ? (
+                <React.Fragment>
+                  <Alert severity="success">{message}</Alert>
+                  <br />
+                </React.Fragment>
+              ) : null}
               <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
                 <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
                   <input
                     type="text"
                     id="footer-field"
                     name="footer-field"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
-                <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
-                Submit
+                <button
+                  class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
+                  onClick={handleSubmit}
+                >
+                  {isSubmit ? <CircularProgress color="secondary" size={25} /> : "Submit"}
                 </button>
               </div>
             </div>
