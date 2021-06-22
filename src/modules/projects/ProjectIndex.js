@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import DataAnalysisProject from './DataAnalysisProject'
 import MLProject from './MLProject'
+import NlpProject from './NlpProject'
 import PowerBIProject from './PowerBIProject'
 import WebProject from './WebProject'
 
@@ -19,6 +20,7 @@ export default function ProjectIndex() {
                     </div>
                 </div>
             </section>
+            <NlpProject />
             {/* <MLProject /> */}
             {/* <DataAnalysisProject /> */}
             {/* <PowerBIProject /> */}

@@ -6,6 +6,7 @@ import Blog from './modules/blog/BlogIndex'
 import Projects from './modules/projects/ProjectIndex'
 import ContactPage from './modules/core/ContactPage';
 import BlogDetails from './modules/blog/Components/BlogDetails';
+import SmsSpamClassification from './modules/projects/nlpproject/SmsSpamClassification';
 
 export default function Routers() {
     return (
@@ -22,11 +23,17 @@ export default function Routers() {
             <Route path="/pojects" exact>
                 <Projects />
             </Route>
-            <Route path="/blog" exact>
+
+            {/* <Route path="/blog" exact>
                 <Blog />
             </Route>
             <Route path="/blogdetails" exact>
                 <BlogDetails />
+            </Route> */}
+
+
+            <Route path="/project/sms-span-classification" exact>
+                <SmsSpamClassification />
             </Route>
         </Switch>
     )

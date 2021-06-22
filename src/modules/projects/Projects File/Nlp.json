@@ -1,0 +1,14 @@
+{
+    "name": "Natural Language Processing Projects",
+    "description": "I have many web dev projects, but these are the main projects I had made.",
+    "data": [
+        {
+            "name": "SMS Spam Classifier",
+            "description": "SMS Spam Classifier using Natural Language Processing, with help of machine learning. Here we can predict a message Spam or not. It helps us to protect from potential scams.",
+            "technology": "Python (NLTK, SkLearn)",
+            "link": "/project/sms-span-classification",
+            "image" : "https://res.cloudinary.com/dkcwzsz7t/image/upload/v1624364367/spam-filter_idgpys.png",
+            "inApp" : true
+        }
+    ]
+}

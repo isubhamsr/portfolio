@@ -73,9 +73,9 @@ export default function Base({ children }) {
               Projects
             </Link>
             {/* <Link class="mr-5 hover:text-gray-900">Third Link</Link> */}
-            <Link class="mr-5 hover:text-gray-900" to="/blog">
+            <a href="https://www.codeingschool.com/" class="mr-5 hover:text-gray-900" >
               Blog
-            </Link>
+            </a>
           </nav>
           <a
             href="https://www.codeingschool.com/"
@@ -105,7 +105,7 @@ export default function Base({ children }) {
       <footer class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap md:text-left text-center order-first">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            {/* <div class="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
                 CATEGORIES
               </h2>
@@ -123,16 +123,16 @@ export default function Base({ children }) {
                   <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
                 </li>
               </nav>
-            </div>
+            </div> */}
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
                 COMPANY
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <Link to="/blog" class="text-gray-600 hover:text-gray-800">
+                  <a href="https://www.codeingschool.com/" class="text-gray-600 hover:text-gray-800">
                     Blog
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <Link to="/about" class="text-gray-600 hover:text-gray-800">
@@ -159,7 +159,7 @@ export default function Base({ children }) {
                 </li>
               </nav>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <div class="lg:w-1/3 md:w-1/2 w-full px-4">
               <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
                 Subscribe Our Newsletter
               </h2>

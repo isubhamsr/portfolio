@@ -1,38 +1,91 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-const data = require('../projects/Projects File/FeatureProject.json')
+import React from "react";
+import { Link } from "react-router-dom";
+const data = require("../projects/Projects File/FeatureProject.json");
 
 export default function PortfolioProject() {
-    return (
-        <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
-                <div class="flex flex-col text-center w-full mb-20">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Feature Projects</h1>
-                    {/* <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p> */}
+  return (
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <h1 class="sm:text-3xl text-2xl font-medium text-center title-font mb-16 text-gray-900">
+          Feature Projects
+        </h1>
+        <div class="flex flex-wrap -m-4">
+          {data.data.map((item, index) => (
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src={item.image}
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                    {item.category}
+                  </h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                    {item.name}
+                  </h1>
+                  <p class="leading-relaxed mb-3">{item.description}</p>
+                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    <b>Technology Use: </b>
+                  </h2>
+                  <p class="tracking-widest text-sm title-font font-medium mb-2">
+                    {item.technology}
+                  </p>{" "}
+                  <div class="flex items-center flex-wrap ">
+                    {item.inApp ? (
+                      <Link
+                        to={item.link}
+                        class="text-indigo-500 inline-flex items-center mt-3"
+                      >
+                        Learn More
+                        <svg
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          class="w-4 h-4 ml-2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </Link>
+                    ) : (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        class="text-indigo-500 inline-flex items-center mt-3"
+                      >
+                        Learn More
+                        <svg
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          class="w-4 h-4 ml-2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    )}
+                  </div>
                 </div>
-                <div class="flex flex-wrap -m-4">
-
-                    {
-                        data.data.map((item, index) => (
-                            <div class="lg:w-1/3 sm:w-1/2 p-4">
-                                <div class="flex relative">
-                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src={item.image} />
-                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                        <p class="title-font font-medium text-lg text-gray-900 mb-3">{item.name}</p>
-                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"><b>Technology Use: </b><p>{item.technology}</p> </h2> 
-                                        <p class="leading-relaxed">{item.description}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))
-                    }
-
-
-                </div>
-                <div class="flex justify-center mt-4">
-                    <Link to='/pojects' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">More</Link>
-                </div>
+              </div>
             </div>
-        </section>
-    )
+          ))}
+        </div>
+        <div class="flex justify-center mt-8">
+          <Link
+            to="/pojects"
+            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+          >
+            More
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
 }

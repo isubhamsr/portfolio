@@ -7,13 +7,24 @@
             "description": "One Stop Solution To Find Your PG/Hostel/Room Near Your College. Study Nest is a platform where students can find their PGs/Hostels/Rooms near their colleges.",
             "technology": "MERN Stack - (Mongo DB, Express Js, React Js, Node Js)",
             "link": "https://study-nest.netlify.app/",
+            "category" : "WEB",
             "image" : "https://res.cloudinary.com/dkcwzsz7t/image/upload/q_auto/v1619424286/custom_1_yabngh.png"
+        },
+        {
+            "name": "SMS Spam Classifier",
+            "description": "SMS Spam Classifier using Natural Language Processing, with help of machine learning. Here we can predict a message Spam or not. It helps us to protect from potential scams.",
+            "technology": "Python (NLTK, SkLearn)",
+            "link": "/project/sms-span-classification",
+            "category" : "Natural Language Processing",
+            "image" : "https://res.cloudinary.com/dkcwzsz7t/image/upload/v1624364367/spam-filter_idgpys.png",
+            "inApp" : true
         },
         {
             "name": "Market Place (Instagram Clone)",
             "description": "Here, I want to make a Social E-Commerce. Where user can share their products, and they can also buy another user's products.",
             "technology": "MERN Stack - (Mongo DB, Express Js, React Js, Node Js)",
             "link": "https://www.linkedin.com/posts/isubhamsr_programming-programmer-python-activity-6718414422240575488-brfU",
+            "category" : "WEB",
             "image" : "https://res.cloudinary.com/dkcwzsz7t/image/upload/q_auto/v1619424881/custom_1_pds7yt.png"
         },
         {
@@ -21,6 +32,7 @@
             "description": "An E-Commerce website for engineers. Where enginers can buy their regular essential goods.",
             "technology": "React Js and Django",
             "link": "https://www.youtube.com/watch?v=ZJwH_tacfNo",
+            "category" : "WEB",
             "image" : "https://res.cloudinary.com/dkcwzsz7t/image/upload/q_auto/v1619424981/custom_1_zrlhng.png"
         },
         {
@@ -28,6 +40,7 @@
             "description": "This is a Technical Blog Website",
             "technology": "React Js and Django",
             "link": "https://www.codeingschool.com/2020/07/how-i-made-django-react-blog.html",
+            "category" : "WEB",
             "image" : "https://res.cloudinary.com/dkcwzsz7t/image/upload/q_auto/v1619424370/custom_1_nh7w3j.png"
         }
     ]
