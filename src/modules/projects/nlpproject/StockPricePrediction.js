@@ -3,7 +3,7 @@ import CustomAlert from "../../../components/CustomAlert";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import HttpClientDjango from "../../../utility/HttpClientDjango";
 
-export default function SmsSpamClassification() {
+export default function StockPricePrediction() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -20,9 +20,12 @@ export default function SmsSpamClassification() {
       const data = {
         text: message,
       };
-      const response = await HttpClientDjango.post("spanclassifier/", data);
+      const response = await HttpClientDjango.post(
+        "stockpriceprediction/",
+        data
+      );
 
-      if (response.error === "true") {
+      if (response.error) {
         setError(true);
         setSuccess(false);
         setIsSubmit(false);
@@ -47,17 +50,19 @@ export default function SmsSpamClassification() {
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-4">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              SMS Spam Classifier
+              Predict Stock Price Movement Based On News Headline (Kaggle
+              Competition)
             </h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-              SMS Spam Classifier using NLP. Machine Learning Algorithm used
-              Naive Bayes, Random Forest, SVM
+              Predict Stock Price Movement Based On News Headline using NLP
+              (Kaggle Competition). Machine Learning Algorithm used Naive Bayes,
+              Random Forest, SVM
             </p>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
               Code{" "}
               <a
                 className="text-indigo-500"
-                href="https://github.com/isubhamsr/NLP/tree/master/Projects/SMS%20Spam%20classifier"
+                href="https://github.com/isubhamsr/NLP/tree/master/Projects/Predict%20Stock%20Price%20Movement%20Based%20On%20News%20Headline%20(Kaggle%20Competition)"
               >
                 GitHub
               </a>{" "}
@@ -107,14 +112,11 @@ export default function SmsSpamClassification() {
             </div>
           </div>
           <p class="lg:w-2/3 mx-auto mt-8 leading-relaxed text-base">
-            For Example, <b>Ham Message</b>: Go until jurong point, crazy.. Available
-            only in bugis n great world la e buffet... Cine there got amore
-            wat...
+            For Example, 0: A hindrance to operations extracts from the leaked
+            reports <b>(Stock Price will Goes Down)</b>
           </p>
           <p class="lg:w-2/3 mx-auto mt-4 leading-relaxed text-base">
-            <b>Spam Message</b>: Free entry in 2 a weekly comp to win FA Cup final
-            21st May 2005. Text FA to 87121 to receive entry question(std txt
-            rate)T&C's apply 08452810075over18's
+            1: Pilgrim knows how to progress <b>(Stock Price will Goes Up)</b>
           </p>
         </div>
       </section>

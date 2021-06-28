@@ -39,7 +39,8 @@ export default function About() {
                 </h2>
                 <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
                 <p class="text-base">
-                  Data Analyst, Web Developer, and Machine Learning Enthusiast
+                  Currently M.Tech(CS) | Full Stack Developer (MERN Stack) |
+                  Learning Natural Language Processing
                 </p>
               </div>
             </div>
@@ -48,8 +49,14 @@ export default function About() {
                 I am Subham Roy, from Kolkata, India. Currently doing my Masters
                 (M.Tech) in Computer Science. I started coding in 2017, and I am
                 still learning. I worked as a freelancer and also for a company
-                in Kolkata, India. Currently, I work on Data Analysis and
-                Natural Language Processing (NLP).
+                in Kolkata, India. I have experience in web and app Service
+                Modularize code with maintaining readable and reusable coding
+                structure using Backend frameworks like Express (node.js),
+                Django (Python), and Front End frameworks like React Js, Recoil
+                Js with MySQL, MongoDB as a primary database. Currently, working
+                on End to End (with Deployment) Natural Language Processing
+                (NLP) with Machine Learning and Deep Learning. A Full Stack Web
+                Developer (MERN stack).
               </p>
               <p class="leading-relaxed text-lg mb-4">
                 <b>This Website made with Reactjs, Nodejs, MongoDb, Django</b>

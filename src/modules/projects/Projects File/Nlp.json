@@ -5,9 +5,17 @@
         {
             "name": "SMS Spam Classifier",
             "description": "SMS Spam Classifier using Natural Language Processing, with help of machine learning. Here we can predict a message Spam or not. It helps us to protect from potential scams.",
-            "technology": "Python (NLTK, SkLearn)",
+            "technology": "Python (Pandas, NLTK, SkLearn)",
             "link": "/project/sms-span-classification",
             "image" : "https://res.cloudinary.com/dkcwzsz7t/image/upload/v1624364367/spam-filter_idgpys.png",
+            "inApp" : true
+        },
+        {
+            "name": "Predict Stock Price Movement Based On News Headline",
+            "description": "Here we can predict a company's stock price goes up or down based on this day's news headline. With this, we can plan our stock market investments.",
+            "technology": "Python (Pandas, NLTK, SkLearn)",
+            "link": "/project/stock-price-prediction",
+            "image" : "https://res.cloudinary.com/dkcwzsz7t/image/upload/v1624664665/1_2p43yQ8wZ7xLXM9Z1c7QFw_pefuip.png",
             "inApp" : true
         }
     ]

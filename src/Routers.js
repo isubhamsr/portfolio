@@ -7,6 +7,7 @@ import Projects from './modules/projects/ProjectIndex'
 import ContactPage from './modules/core/ContactPage';
 import BlogDetails from './modules/blog/Components/BlogDetails';
 import SmsSpamClassification from './modules/projects/nlpproject/SmsSpamClassification';
+import StockPricePrediction from './modules/projects/nlpproject/StockPricePrediction';
 
 export default function Routers() {
     return (
@@ -34,6 +35,9 @@ export default function Routers() {
 
             <Route path="/project/sms-span-classification" exact>
                 <SmsSpamClassification />
+            </Route>
+            <Route path="/project/stock-price-prediction" exact>
+                <StockPricePrediction />
             </Route>
         </Switch>
     )

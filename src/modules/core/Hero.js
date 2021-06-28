@@ -9,8 +9,8 @@ export default function Hero() {
                     <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">SUBHAM ROY
         <br class="lg:inline-block" />M.Tech (CS)
       </h1>
-                    <p class="mb-8 leading-relaxed">A self-made Data Analyst, Web Developer, and Machine Learning Enthusiast. Currently, works on Natural Language Processing (NLP). Learning things by Googling .</p>
-                    <p class="mb-8 leading-relaxed"><b>Skills: </b>Python (OOPs), JavaScript, MySQL, MongoDB, Power BI, Data Analysis</p>
+                    <p class="mb-8 leading-relaxed">A self-made Full Stack Web Developer (MERN Stack), and Machine Learning Enthusiast. Currently, works on End to End Natural Language Processing (NLP). Learning things by Googling .</p>
+                    <p class="mb-8 leading-relaxed"><b>Skills: </b>Python (OOPs), JavaScript, MySQL, MongoDB, NLP, Machine Learning</p>
                     <div class="flex justify-center">
                         <a href="https://github.com/isubhamsr" target="_blank" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">GitHub</a>
                         <a href="https://drive.google.com/file/d/197OYs_qSci1UjIg4ZzlXB7IMavLhlNoz/view?usp=sharing" target="_blank" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Resume</a>
