@@ -91,7 +91,11 @@ export default function Roadmap() {
                 </Typography>
                 <Typography>
                   React Js Developer at{" "}
-                  <a style={{ color: "blue" }} target="_blank" href="https://astakyuta.com/">
+                  <a
+                    style={{ color: "blue" }}
+                    target="_blank"
+                    href="https://astakyuta.com/"
+                  >
                     Astakyuta Private Limited
                   </a>{" "}
                   (2 months)
@@ -105,6 +109,7 @@ export default function Roadmap() {
                 {/* <RepeatIcon /> */}
                 <SchoolIcon />
               </TimelineDot>
+              <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
               <Paper elevation={3} className={classes.paper}>
@@ -112,6 +117,53 @@ export default function Roadmap() {
                   Masters
                 </Typography>
                 <Typography>M.Tech in Computer Science, 2022</Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot color="primary">
+                {/* <HotelIcon /> */}
+                <WorkIcon />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={3} className={classes.paper}>
+                <Typography variant="h6" component="h1">
+                  Intern @{" "}
+                  <a
+                    style={{ color: "blue" }}
+                    target="_blank"
+                    href="https://www.cognizant.com/in/en"
+                  >
+                    Cognizant
+                  </a>{" "}
+                </Typography>
+                <Typography>Learn and build web app with ASP dot Net, Angular and SQL Server</Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot color="primary">
+                {/* <HotelIcon /> */}
+                <WorkIcon />
+              </TimelineDot>
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={3} className={classes.paper}>
+                <Typography variant="h6" component="h1">
+                  Programmer Analyst Trainee{" "}
+                  <a
+                    style={{ color: "blue" }}
+                    target="_blank"
+                    href="https://www.cognizant.com/in/en"
+                  >
+                    Cognizant
+                  </a>{" "}
+                </Typography>
+                <Typography>Build POC app with ASP dot Net, ReactJs</Typography>
               </Paper>
             </TimelineContent>
           </TimelineItem>
