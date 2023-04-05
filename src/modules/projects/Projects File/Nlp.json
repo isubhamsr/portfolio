@@ -17,6 +17,14 @@
             "link": "/project/stock-price-prediction",
             "image" : "https://res.cloudinary.com/dkcwzsz7t/image/upload/v1624664665/1_2p43yQ8wZ7xLXM9Z1c7QFw_pefuip.png",
             "inApp" : true
+        },
+        {
+            "name": "Fake News Classification Using Natural Language Processing",
+            "description": "Make with Diffrect Language",
+            "technology": "Python (Pandas, NLTK, SkLearn)",
+            "link": "/project/fake-news-prediction",
+            "image" : "https://res.cloudinary.com/dkcwzsz7t/image/upload/v1624664665/1_2p43yQ8wZ7xLXM9Z1c7QFw_pefuip.png",
+            "inApp" : true
         }
     ]
 }

@@ -8,6 +8,7 @@ import ContactPage from './modules/core/ContactPage';
 import BlogDetails from './modules/blog/Components/BlogDetails';
 import SmsSpamClassification from './modules/projects/nlpproject/SmsSpamClassification';
 import StockPricePrediction from './modules/projects/nlpproject/StockPricePrediction';
+import FakeNewsClassification from './modules/projects/nlpproject/FakeNewsClassification';
 
 export default function Routers() {
     return (
@@ -38,6 +39,9 @@ export default function Routers() {
             </Route>
             <Route path="/project/stock-price-prediction" exact>
                 <StockPricePrediction />
+            </Route>
+            <Route path="/project/fake-news-prediction" exact>
+                <FakeNewsClassification />
             </Route>
         </Switch>
     )
