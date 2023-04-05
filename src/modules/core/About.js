@@ -39,8 +39,7 @@ export default function About() {
                 </h2>
                 <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
                 <p class="text-base">
-                  Currently M.Tech(CS) | Full Stack Developer (MERN Stack) |
-                  Learning Natural Language Processing
+                  Currently M.Tech(CS) | Full Stack Developer (MERN Stack)
                 </p>
               </div>
             </div>
