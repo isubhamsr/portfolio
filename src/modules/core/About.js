@@ -49,7 +49,7 @@ export default function About() {
                 still learning. I worked as a freelancer and also for a company
                 in Kolkata, India. I have experience in web and app Service
                 Modularize code with maintaining readable and reusable coding
-                structure using Backend frameworks like Express (node.js),
+                structure using Backend frameworks like ASP .Net Core, Express (node.js),
                 Django (Python), and Front End frameworks like React Js, Redux
                 with MySQL, MongoDB as a primary database. A Full Stack Web
                 Developer (MERN stack).
