@@ -20,11 +20,12 @@ export default function ProjectIndex() {
                     </div>
                 </div>
             </section>
+            <WebProject />
             <NlpProject />
             {/* <MLProject /> */}
             {/* <DataAnalysisProject /> */}
             {/* <PowerBIProject /> */}
-            <WebProject />
+            
         </React.Fragment>
     )
 }

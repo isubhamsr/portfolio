@@ -39,23 +39,19 @@ export default function About() {
                 </h2>
                 <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
                 <p class="text-base">
-                  Currently M.Tech(CS) | Full Stack Developer (MERN Stack) |
-                  Learning Natural Language Processing
+                  Currently M.Tech(CS) | Full Stack Developer (MERN Stack)
                 </p>
               </div>
             </div>
             <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
               <p class="leading-relaxed text-lg mb-4">
-                I am Subham Roy, from Kolkata, India. Currently doing my Masters
-                (M.Tech) in Computer Science. I started coding in 2017, and I am
+                I am Subham Roy, from Kolkata, India. working at Cognizant as Full Stack Web developer. I started coding in 2017, and I am
                 still learning. I worked as a freelancer and also for a company
                 in Kolkata, India. I have experience in web and app Service
                 Modularize code with maintaining readable and reusable coding
-                structure using Backend frameworks like Express (node.js),
-                Django (Python), and Front End frameworks like React Js, Recoil
-                Js with MySQL, MongoDB as a primary database. Currently, working
-                on End to End (with Deployment) Natural Language Processing
-                (NLP) with Machine Learning and Deep Learning. A Full Stack Web
+                structure using Backend frameworks like ASP .Net Core, Express (node.js),
+                Django (Python), and Front End frameworks like React Js, Redux
+                with MySQL, MongoDB as a primary database. A Full Stack Web
                 Developer (MERN stack).
               </p>
               <p class="leading-relaxed text-lg mb-4">
